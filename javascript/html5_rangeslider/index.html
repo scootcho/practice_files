@@ -1,0 +1,29 @@
+<!-- practice walkthrough from codeplayer -->
+<!-- http://thecodeplayer.com/walkthrough/spicing-up-the-html5-range-slider-input?utm_source=TheCodePlayer&utm_campaign=5b4d9871a4-Direct_Messages10_1_2013&utm_medium=email&utm_term=0_9d9ac48e00-5b4d9871a4-89594157 -->
+
+<h1>Spicing up the HTML5 range slider input</h1>
+<link rel="stylesheet" href="style.css">
+
+<div id="input-wrapper">
+	<!-- The step param prevents snapping of the slider -->
+	<!-- oninput triggers while dragging -->
+	<!-- onchange triggers when the user leaves the mousehold -->
+	<!-- onmouseup is a fallback for onchange which might not trigger if the value before and after a drag is same -->
+	<input type="range" id="rangeslider" min="0" max="30" value="20" step="0.05" 
+	oninput="updateOutput(value, true)" 
+	onchange="deactivate()" 
+	onmouseup="deactivate()" 
+	/>
+	<!-- The reel -->
+	<div id="reel">
+		<!-- reel numbers - will be populated by JS -->
+		<div id="rn"></div>
+	</div>
+	<!-- static output display on the slider thumb - controlled by JS -->
+	<div id="static-output"></div>
+</div>
+
+<!-- scripts -->
+<script type="text/javascript" src="http://thecodeplayer.com/u/js/jquery-1.9.1.min.js"></script>
+
+<script src="script.js"></script> 

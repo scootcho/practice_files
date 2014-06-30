@@ -1,0 +1,82 @@
+/*Sniglet and Oswald custom fonts*/
+@import url("http://fonts.googleapis.com/css?family=Sniglet|Oswald");
+/*basic reset and general styles*/
+* {margin: 0; padding: 0;}
+body {padding-top: 50px; background: hsl(175, 30%, 30%);}
+h1 {
+	font: normal 36px Sniglet; color: white;
+	padding: 50px; text-align: center;
+}
+/*
+	Rangeslider width = 400px
+	Track height = 5px
+	Slider thumb height = 25px(5px over the track, 10px above and below)
+	Reel width/height = 54px = slider thumb width = static output width
+*/
+#input-wrapper {
+	width: 400px; margin: 0 auto;
+	position: relative;
+	/*padding: 54px on top for #reel, 10px on top/bottom for slider thumb*/
+	padding-top: 64px;
+	padding-bottom: 10px;
+	/*To hide the extra portion of the completed track on the left*/
+	overflow-x: hidden;
+}
+#rangeslider {
+	display: block; appearance: none; outline: none;
+	height: 5px; width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+}
+#rangeslider::-webkit-slider-thumb {
+	appearance: none; cursor: pointer;
+	height: 5px; width: 54px;
+	position: relative;
+}
+#rangeslider::-webkit-slider-thumb:after {
+	content: '< >'; word-spacing: 20px; text-align: center;
+	background: hsl(140, 50%, 70%);
+	font: bold 17px/25px Sniglet; color: white;
+	width: 54px; height: 25px;
+	position: absolute; top: -10px; left: 0;
+	color: transparent; transition: color 0.25s;
+}
+/*completed part of the track on the left side*/
+#rangeslider::-webkit-slider-thumb:before {
+	content: '';
+	height: 5px; width: 400px;
+	position: absolute; top: 0; right: 0;
+	background: hsl(140, 50%, 70%);
+	/*prevent click obstruction for the real slider track beneath*/
+	pointer-events: none;
+}
+/*reel styles*/
+#reel {
+	width: 54px; height: 54px;
+	overflow: hidden;
+	position: absolute; top: 0; /*left pos will be controlled by JS*/
+	opacity: 0; transition: opacity 0.25s;
+}
+#rn {
+	background: linear-gradient(hsl(0, 80%, 70%), hsl(120, 80%, 70%));
+	transition: all 0.25s; /*vertical movement animation for the reel*/
+}
+#rn span {
+	font: 30px/54px Oswald; color: white;
+	display: block; text-align: center;
+}
+/*static output styles*/
+#static-output {
+	font: bold 17px/25px Sniglet; color: white;
+	position: absolute; bottom: 0;
+	height: 25px; width: 54px; text-align: center;
+	/*disable clicks so that the slider thumb can be controlled*/
+	pointer-events: none;
+	transition: color 0.25s;
+}
+
+/*animation styles using .active. The reel and arrows will stay hidden by default. On user activity the static output will fade away and the reel and arrows will fade in*/
+.active #reel {opacity: 1;}
+.active #static-output {color: transparent;}
+.active #rangeslider::-webkit-slider-thumb:after {color: white;}
+
+
