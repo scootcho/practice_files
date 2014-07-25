@@ -1,2 +1,2 @@
-Edx Saas169.1x homework projects
-===========
+Collection of small projects and exercise files
+==========================
