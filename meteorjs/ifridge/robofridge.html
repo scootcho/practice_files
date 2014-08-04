@@ -1,0 +1,251 @@
+<head>
+  <link rel="stylesheet">
+  <title>robofridge</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+
+
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column" style="margin-top:20px;margin-bottom:20px">
+			<div class="row clearfix">
+				<div class="col-md-2 column">
+					<div class="hoja">CODEPEN</div>
+				</div>
+                <div class="col-md-8 column">
+					<h1 class="text-left">
+						ROBO-FRIDGE [o___0]
+					</h1>
+				</div>
+				<div class="col-md-2 column">
+                    
+                    {{> robot}}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-8 column">
+                    <table class="table table-striped table-condensed table-bordered">                        
+                        <thead>
+                            <tr>
+                                <td><h4><i class="fa fa-user fa-fw"></i>Member</h4></td>
+                                <td><h4><i class="fa fa-lightbulb-o fa-fw"></i>Topic</h4></td>
+                                <td><h4><i class="fa fa-calendar fa-fw"></i>Due Date</h4></td>
+                                <td><h4><i class="fa fa-comments fa-fw"></i>Comment</h4></td>
+                            </tr>             
+                        </thead>
+                        <tbody>
+                            {{#each msgboards}}
+                            <tr>
+                                <td>{{member}}</td>
+                                <td>{{topic}}</td>
+                                <td>{{due}}</td>
+                                <td>{{comment}}</td>
+                            </tr>
+                            {{/each}}
+                            <tr>
+                                <td>
+                                    <input type="text" name="member" value="" id="member">
+                                </td>
+                                <td>
+                                    <input type="text" name="topic" value="" id="topic">
+                                </td>
+                                <td>
+                                    <input type="text" name="due" value="" id="due">
+                                </td>
+                                <td>
+                                    <input type="text" name="comment" value="" id="comment">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+					<form role="form">
+						<div class="form-group">
+							 <label for="exampleInputEmail1">Email address</label><input type="email" class="form-control" id="exampleInputEmail1">
+						</div>
+						<div class="form-group">
+							 <label for="exampleInputFile">File input</label><input type="file" id="exampleInputFile">
+							<p class="help-block">
+								Example block-level help text here.
+							</p>
+						</div>
+                        <div>
+                            <button type="submit" class="btn btn-default">Submit</button>                            
+                        </div>
+
+					</form>
+				</div>
+                
+                <!--[ Item Section ]-->
+                
+                    {{> todo}}
+                
+                <!--[ Item Section ]-->
+                
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="http://lorempixel.com/600/200/people">
+						<div class="caption">
+							<h3>
+								Thumbnail label
+							</h3>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="http://lorempixel.com/600/200/city">
+						<div class="caption">
+							<h3>
+								Thumbnail label
+							</h3>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+							</p>
+						</div>
+					</div>
+				</div>
+                
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="http://lorempixel.com/600/200/sports">
+						<div class="caption">
+							<h3>
+								Thumbnail label
+							</h3>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+    
+    
+</template>
+
+
+
+<template name="side">
+
+				<div class="col-md-4 column">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td><h4>ITEMS</h4></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each lists}}
+                            <tr>
+                                <td>{{item}}</td>
+                            </tr>
+                            {{/each}}
+                            <form>
+                                <input type="text" name="item">
+                                <input type="submit" value="List">
+                            </form>
+                        </tbody>                                
+                    </table>
+				</div>
+
+</template>
+
+
+
+<template name="robot">
+<div id="robotainer">
+  <div id="bot">
+    <div id="eyes">
+      <div id="left">
+        <div class="eye"></div>
+      </div>
+      <div id="right">
+        <div class="eye"></div>
+      </div>
+    </div>
+    <div id="leftarm">
+      <div class="finger"></div>
+      <div class="finger"></div>
+    </div>
+    <div id="rightarm">
+      <div class="finger"></div>
+      <div class="finger"></div>
+    </div>
+  </div>
+  <div id="neck"></div>
+  <div id="body"></div>
+  <div id="legs">
+    <div id="left">
+      <div class="foot"></div>
+    </div>
+    <div id="right">
+      <div class="foot"></div>
+    </div>
+  </div>
+</div>
+</template>
+
+<template name="todo">
+    
+<div class="col-md-4 column">
+<div ng-app="TodoApp" class="container">
+  <div ng-controller="TodoCtrl" class="col-xs-4">
+    <h1>My Todo List</h1>
+    <div
+         ng-repeat="todo in todos track by $index" class="callout"
+         ng-class="{ 'callout-info': !todo.done, 'callout-success': todo.done }">
+      <i
+         class="ficon ficon-checkmark mark-done"
+         ng-click="markSuccess($index)"></i>
+      <span>{{ todo.name }}</span>
+      <span class="close" ng-click="remove($index)">&times;</span>
+    </div>
+    <form
+          class="form-inline todo-form col-xs-4"
+          role="form"
+          ng-submit="addTodo()">
+      <div class="input-group" id="todoInput">
+        <label class="sr-only" for="todoInput">Todo</label>
+        <input
+          type="text"
+          class="form-control"
+          ng-model="toAdd"
+          placeholder="What do you need to do?">
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-default">Add Todo</button>
+        </span>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+</template>
