@@ -13,8 +13,8 @@ my_file = File.open("my_results.csv")
 require 'mailgun'
 
 Mailgun.configure do |config|
-  config.api_key = 'key-8h-lnw7xulidelrhgawtub8lf2oikqj8'
-  config.domain  = 'sandbox2c02f80f848447ae8c30bd6f232d1428.mailgun.org'
+  config.api_key = 'key'
+  config.domain  = 'sandbox12345.mailgun.org'
 end
 
 @mailgun = Mailgun()
@@ -23,10 +23,10 @@ end
 # @mailgun = Mailgun(:api_key => 'key-8h-lnw7xulidelrhgawtub8lf2oikqj8')
 
 parameters = {
-  :to => "scott.tj.yu@gmail.com",
+  :to => "scott@robot.com",
   :subject => "Email from a robot",
   :text => "Beep beep...beep..keep programming awesome stuff! Btw, NSA is watching!!",
-  :from => "scott@sandbox2c02f80f848447ae8c30bd6f232d1428.mailgun.org",
+  :from => "scott@sandbox12345.mailgun.org",
   :attachment => File.new(my_file)
 }
 @mailgun.messages.send_email(parameters)
