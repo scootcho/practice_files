@@ -29,7 +29,7 @@ parameters = {
   :to => "scott@robot.com",
   :subject => "Email from a robot",
   :text => "Beep beep...beep..keep programming awesome stuff! Btw, NSA is watching!!",
-  :from => "scott@sandbox2c02f80f848447ae8c30bd6f232d1428.mailgun.org",
+  :from => "scott@sandbox12345.mailgun.org",
   :attachment => File.new(tweets)
 }
 @mailgun.messages.send_email(parameters)
