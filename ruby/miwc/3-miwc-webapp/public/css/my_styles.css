@@ -1,0 +1,4 @@
+    /* Don't let the header overlap the main content */
+    .starter-template {
+        margin-top:70px;
+    }

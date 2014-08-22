@@ -1,0 +1,19 @@
+source 'https://rubygems.org'
+
+# webapp framework
+gem "sinatra", "~> 1.4.4"
+
+# database manager (orm) originally from Rails
+gem "activerecord", "~> 4.0.3"
+
+# sinatra interface for activereocrd
+gem "sinatra-activerecord"
+
+# the sqlite database provider
+gem "sqlite3"
+
+# for writing little standalone tasks
+gem "rake"
+
+# to limit which attributes can be mass assigned to
+gem "protected_attributes"

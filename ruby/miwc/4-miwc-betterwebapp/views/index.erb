@@ -1,0 +1,20 @@
+<h1>Hello, my name is <%= @my_name %></h1>
+
+<hr>
+
+<h2>Here are some things a robot eats</h2>
+<% @some_things.each do |thing| %>
+    <%= " * " + thing %>
+    <br/>
+<% end %>
+
+<hr/>
+
+<h2>Latest tweets on robots!</h2>
+
+<br/>
+
+<% @my_tweets.each do |robot| %>
+  <%= " * " + robot.text %>
+  <br/>
+<% end %>
