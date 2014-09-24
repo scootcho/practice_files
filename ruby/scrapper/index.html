@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en" class="cursor">
+<head>
+	<script>if(typeof performance !== "undefined" && 'mark' in performance){performance.mark("mark_head_start");}</script>
+	<title>Learn Ruby the Hard Way: Keywords flashcards | Quizlet</title>
+
+			<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>	
+			<script type='text/javascript'>
+
+		var _gaq=[['_setAccount','UA-1203987-1'],['_setDomainName','none'],['_setCustomVar',1,'Logged In','false',2],['_setCustomVar',3,'ABTests','analytics_source:doubleclick'],['_setCustomVar',4,'LoginSource','']],Quizlet={LOGGED_IN:false,SERVER_TIME:1411049781,DEBUG:false};
+		var QWait,QLoad;
+(function(){var c=[],g={},h=0,f=function(b,a,c,d){6>h++&&((new Image).src="/activity-log/create?title="+(d||"preload_js_error")+"&data="+encodeURIComponent('"msg: '+b+"; "+a+"#"+c+'"'))};window.onerror=f;QWait=function(){for(var b=arguments,a=b.length-1,e=b[a],d=[];a--;)g.hasOwnProperty(b[a])||d.push(b[a]);d.length?c.push({labels:d,func:e}):e()};QLoad=function(b){var a,e,d,f;a=0;for(e=c.length;a<e;a++)for(d=f=c[a].labels.length;d--;)if(c[a].labels[d]===b){c[a].labels.splice(d,1);if(1===f){c.splice(a,
+1)[0].func();QLoad(b);return}break}g[b]=1};setTimeout(function(){var b=c.length,a="";for(label in g)a+=", "+label;for(;b--;)f(c[b].labels.toString()+" UNFIRED; "+a.substr(2)+" DONE","","","unfired_label")},2E4);window.onload=function(){QWait("quizlib",function(){QLoad("dom");QLoad("onload")})}})();
+		/*! LAB.js (LABjs :: Loading And Blocking JavaScript)
+    v2.0.3 (c) Kyle Simpson
+    MIT License
+*/
+(function(n){var q=n.$LAB,i="UseLocalXHR",m="AlwaysPreserveOrder",k="AllowDuplicates",j="CacheBust",d="BasePath",o=/^[^?#]*\//.exec(location.href)[0],y=/^\w+\:\/\/\/?[^\/]+/.exec(o)[0],e=document.head||document.getElementsByTagName("head"),g=(n.opera&&Object.prototype.toString.call(n.opera)=="[object Opera]")||("MozAppearance" in document.documentElement.style),w=document.createElement("script"),a=typeof w.preload=="boolean",t=a||(w.readyState&&w.readyState=="uninitialized"),u=!t&&w.async===true,v=!t&&!u&&!g;function r(z){return Object.prototype.toString.call(z)=="[object Function]"}function x(z){return Object.prototype.toString.call(z)=="[object Array]"}function f(B,A){var z=/^\w+\:\/\//;if(/^\/\/\/?/.test(B)){B=location.protocol+B}else{if(!z.test(B)&&B.charAt(0)!="/"){B=(A||"")+B}}return z.test(B)?B:((B.charAt(0)=="/"?y:o)+B)}function h(A,B){for(var z in A){if(A.hasOwnProperty(z)){B[z]=A[z]}}return B}function b(A){var B=false;for(var z=0;z<A.scripts.length;z++){if(A.scripts[z].ready&&A.scripts[z].exec_trigger){B=true;A.scripts[z].exec_trigger();A.scripts[z].exec_trigger=null}}return B}function c(B,A,z,C){B.onload=B.onreadystatechange=function(){if((B.readyState&&B.readyState!="complete"&&B.readyState!="loaded")||A[z]){return}B.onload=B.onreadystatechange=null;C()}}function s(z){z.ready=z.finished=true;for(var A=0;A<z.finished_listeners.length;A++){z.finished_listeners[A]()}z.ready_listeners=[];z.finished_listeners=[]}function p(B,C,A,D,z){setTimeout(function(){var E,G=C.real_src,F;if("item" in e){if(!e[0]){setTimeout(arguments.callee,25);return}e=e[0]}E=document.createElement("script");if(C.type){E.type=C.type}if(C.charset){E.charset=C.charset}if(C.crossorigin){E.crossOrigin=C.crossorigin}if(z){if(t){A.elem=E;if(a){E.preload=true;E.onpreload=D}else{E.onreadystatechange=function(){if(E.readyState=="loaded"){D()}}}E.src=G}else{if(z&&G.indexOf(y)==0&&B[i]){F=new XMLHttpRequest();F.onreadystatechange=function(){if(F.readyState==4){F.onreadystatechange=function(){};A.text=F.responseText+"\n//@ sourceURL="+G;D()}};F.open("GET",G);F.send()}else{E.type="text/cache-script";c(E,A,"ready",function(){e.removeChild(E);D()});E.src=G;e.insertBefore(E,e.firstChild)}}}else{if(u){E.async=false;c(E,A,"finished",D);E.src=G;e.insertBefore(E,e.firstChild)}else{c(E,A,"finished",D);E.src=G;e.insertBefore(E,e.firstChild)}}},0)}function l(){var B={},G=t||v,z=[],A={},D;B[i]=true;B[m]=false;B[k]=false;B[j]=false;B[d]="";function F(J,L,I){var H;function K(){if(H!=null){H=null;s(I)}}if(A[L.src].finished){return}if(!J[k]){A[L.src].finished=true}H=I.elem||document.createElement("script");if(L.type){H.type=L.type}if(L.charset){H.charset=L.charset}c(H,I,"finished",K);if(I.elem){I.elem=null}else{if(I.text){H.onload=H.onreadystatechange=null;H.text=I.text}else{H.src=L.real_src}}e.insertBefore(H,e.firstChild);if(I.text){K()}}function C(J,N,M,H){var I,L,K=function(){N.ready_cb(N,function(){F(J,N,I)})},O=function(){N.finished_cb(N,M)};N.src=f(N.src,J[d]);N.real_src=N.src+(J[j]?((/\?.*$/.test(N.src)?"&_":"?_")+~~(Math.random()*1000000000)+"="):"");if(!A[N.src]){A[N.src]={items:[],finished:false}}L=A[N.src].items;if(J[k]||L.length==0){I=L[L.length]={ready:false,finished:false,ready_listeners:[K],finished_listeners:[O]};p(J,N,I,((H)?function(){I.ready=true;for(var P=0;P<I.ready_listeners.length;P++){I.ready_listeners[P]()}I.ready_listeners=[]}:function(){s(I)}),H)}else{I=L[0];if(I.finished){O()}else{I.finished_listeners.push(O)}}}function E(){var K,O=h(B,{}),H=[],J=0,L=false,N;function Q(S,R){S.ready=true;S.exec_trigger=R;I()}function P(T,S){T.ready=T.finished=true;T.exec_trigger=null;for(var R=0;R<S.scripts.length;R++){if(!S.scripts[R].finished){return}}S.finished=true;I()}function I(){while(J<H.length){if(r(H[J])){try{H[J++]()}catch(R){}continue}else{if(!H[J].finished){if(b(H[J])){continue}break}}J++}if(J==H.length){L=false;N=false}}function M(){if(!N||!N.scripts){H.push(N={scripts:[],finished:true})}}K={script:function(){for(var R=0;R<arguments.length;R++){(function(V,T){var U;if(!x(V)){T=[V]}for(var S=0;S<T.length;S++){M();V=T[S];if(r(V)){V=V()}if(!V){continue}if(x(V)){U=[].slice.call(V);U.unshift(S,1);[].splice.apply(T,U);S--;continue}if(typeof V=="string"){V={src:V}}V=h(V,{ready:false,ready_cb:Q,finished:false,finished_cb:P});N.finished=false;N.scripts.push(V);C(O,V,N,(G&&L));L=true;if(O[m]){K.wait()}}})(arguments[R],arguments[R])}return K},wait:function(){if(arguments.length>0){for(var R=0;R<arguments.length;R++){H.push(arguments[R])}N=H[H.length-1]}else{N=false}I();return K}};return{script:K.script,wait:K.wait,setOptions:function(R){h(R,O);return K}}}D={setGlobalDefaults:function(H){h(H,B);return D},setOptions:function(){return E().setOptions.apply(null,arguments)},script:function(){return E().script.apply(null,arguments)},wait:function(){return E().wait.apply(null,arguments)},queueScript:function(){z[z.length]={type:"script",args:[].slice.call(arguments)};return D},queueWait:function(){z[z.length]={type:"wait",args:[].slice.call(arguments)};return D},runQueue:function(){var J=D,H=z.length,I=H,K;for(;--I>=0;){K=z.shift();J=J[K.type].apply(null,K.args)}return J},noConflict:function(){n.$LAB=q;return D},sandbox:function(){return l()}};return D}n.$LAB=l();(function(B,z,A){if(document.readyState==null&&document[B]){document.readyState="loading";document[B](z,A=function(){document.removeEventListener(z,A,false);document.readyState="complete"},false)}})("addEventListener","DOMContentLoaded")})(this);
+		
+		$LAB.setOptions({AlwaysPreserveOrder:true})
+			.script([{"src":"http://quizlet.com/a/j/en/quizlib-jquery-2.2t7MA.js","crossdomain":"anonymous"},{"src":"http://quizlet.com/a/j/en/set.yAt4t.js","crossdomain":"anonymous"}]);
+
+					$LAB.script('http://www.googletagservices.com/tag/js/gpt.js');
+		
+</script>
+	
+		<script>DPR=typeof devicePixelRatio=='undefined'?1:devicePixelRatio</script>
+			<script type="text/javascript">
+			// load CSS
+			(function(){var link,fragment=document.createDocumentFragment(),arr=["(DPR>1.3) ? 'http:\/\/quizlet.com\/a\/c\/global\/all-woff.5Qm6u.r.css' : 'http:\/\/quizlet.com\/a\/c\/global\/all-woff.5Qm6u.n.css'","(DPR>1.3) ? 'http:\/\/quizlet.com\/a\/c\/set\/all.wBvjP.r.css' : 'http:\/\/quizlet.com\/a\/c\/set\/all.wBvjP.n.css'"];for(var i=0;i<arr.length;i++){if(document.createStyleSheet){document.createStyleSheet(eval(arr[i]));}else{link=document.createElement('link');link.type='text/css';link.rel='stylesheet';link.href=eval(arr[i]);fragment.appendChild(link)}document.getElementsByTagName('head')[0].appendChild(fragment)}})();
+		</script>
+	
+	<link rel="dns-prefetch" href="//up.quizlet.com">
+	<link rel="dns-prefetch" href="//fb.quizlet.com">
+
+	
+	<link rel="shortcut icon" href="http://quizlet.com/a/i/favicon.Rwzs.ico" />
+
+									
+	<link rel="canonical" href="http://quizlet.com/19946728/learn-ruby-the-hard-way-keywords-flash-cards/" />
+
+
+				
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@quizlet">
+	<meta name="twitter:title" content="Learn Ruby the Hard Way: Keywords">
+	<meta name="twitter:description" content="38 terms · alias → To create a second name for..., and → A command that appends two ..., BEGIN → Designates code that must b..., begin → Delimits a &quot;begin&quot; block of..., break → Gives an unconditional term..., case → ">
+
+	<meta property="og:title" content="Learn Ruby the Hard Way: Keywords">
+	<meta property="og:description" content="38 terms · alias → To create a second name for..., and → A command that appends two ..., BEGIN → Designates code that must b..., begin → Delimits a &quot;begin&quot; block of..., break → Gives an unconditional term..., case → ">
+
+	
+			<meta property="og:image" content="http://quizlet.com/a/i/icons/256.tQMH.jpg">
+	
+			<meta name="twitter:app:name:iphone" content="Quizlet">
+		<meta name="twitter:app:id:iphone" content="546473125">
+
+		<meta name="twitter:app:name:ipad" content="Quizlet">
+		<meta name="twitter:app:id:ipad" content="546473125">
+	<meta name="description" content="Vocabulary words for A set of important keywords that every Ruby programmer should know! Much thanks to Ruby-Doc.org. (Based off of Zed Shaw&amp;#039;s &amp;quot;Learn Ruby the Hard Way&amp;quot; programming tutorial.). Includes studying games and tools such as flashcards." />
+	
+	
+	<script type='text/javascript'>window.DFPADS = false;if ((window.innerWidth || (document.documentElement && document.documentElement.clientWidth) || (document.body && document.body.clientWidth)) >= 568) {window.DFPADS={};googletag=window.googletag||{};googletag.cmd=googletag.cmd||[];googletag.cmd.push(function(){if(DFPADS)DFPADS["dfp-SetSidebarV2"]=googletag.defineSlot("\/6396803\/SetSidebarV2",[160,600],"dfp-SetSidebarV2").addService(googletag.pubads());if(DFPADS)DFPADS["dfp-NewFooterLO"]=googletag.defineSlot("\/6396803\/NewFooterLO",[728,90],"dfp-NewFooterLO").addService(googletag.pubads());googletag.pubads().enableSingleRequest();googletag.enableServices();});}</script>
+</head>
+<body class="setpage none-selected plural-selected order-original study-all-terms show-all terms-tab qad-is-showing">
+
+<div class="site">
+
+<script>if(typeof performance !== "undefined" && 'mark' in performance){performance.mark("mark_body_start"); }</script>
+
+<header id="header" class="global header logged-out">
+	<div class="container">
+
+		<a class="td activate-nav nav-icon" id="activate-nav" href="#"><span class="glyph icon nav-icon ">&#xe057;</span></a>
+
+		<h1 class="logo td" id="logo">
+			<a href="/" class="link" data-sourcename="header-logo">
+				Quizlet			</a>
+		</h1>
+
+		<div class="search-wrap td">
+			<form class="search searchForm" action="/subject/" method="GET" onsubmit="return sendSearch('header-search')">
+				<label class="input">
+					<input type="text" class="text" tabindex="1" name="q" id="header-search" placeholder="Search Quizlet" autocomplete="off" />
+				</label>
+				<input type="submit" class="submit" value="&#xe040;" tabindex="2" />
+			</form>
+		</div>
+
+		<a class="td activate-search nav-icon" id="activate-search" href="#"><span class="glyph icon search-icon ">&#xe040;</span></a>
+		<a class="td deactivate-search nav-icon" id="deactivate-search" href="#"><span class="glyph icon x-icon ">&#xe037;</span></a>
+
+		
+				<a href="https://quizlet.com/create-set" class="td create-link nav-icon " data-sourcename="header-create-set">
+			<span class="glyph icon create-set-icon ">&#xe002;</span>			<span class="label">Create a Set</span>
+		</a>
+
+		
+	<aside class="guest td">
+		<div class="login poppable clickable">
+			<a href="https://quizlet.com/login?redir=http%3A%2F%2Fquizlet.com%2F19946728%2Flearn-ruby-the-hard-way-keywords-flash-cards%2F" class="login activate link" id="show-login" rel="nofollow">Log In<span class="glyph icon arrow-up-icon ">&#xe017;</span></a>			<div class="login popout">
+				<section class="linear login content">
+	<div class="connect">
+		<div class="google">
+			<a class="google button" href="https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=https%3A%2F%2Fquizlet.com%2Fgoogle-login&client_id=520305074949.apps.googleusercontent.com&scope=profile+email&access_type=online&approval_prompt=auto&state=%7B%22state%22%3A%22Z95pv7%22%2C%22reauth%22%3Afalse%2C%22from%22%3A%22%5C%2F19946728%5C%2Flearn-ruby-the-hard-way-keywords-flash-cards%5C%2F%22%7D">
+				<span class="glyph icon google-icon ">&#xe056;</span>				<span class="label">Log In with Google</span>
+			</a>
+		</div>
+		<div class="fb">
+			<a class="fb-login fb_button fb_button_large " href="https://www.facebook.com/dialog/oauth?client_id=2232594215&redirect_uri=https%3A%2F%2Fquizlet.com%2Ffb-login%3Ffrom%3Dhttp%253A%252F%252Fquizlet.com%252F19946728%252Flearn-ruby-the-hard-way-keywords-flash-cards%252F&state=Z95pv7&scope=email%2Cuser_birthday%2Cuser_education_history"><span class="icon"></span><span class="label">Log In with Facebook</span></a>		</div>
+	</div>
+
+	<span class="Divider"><span class="Divider-label--lowercase Divider-label">or</span></span>
+
+	<form class="login" action="https://quizlet.com/login" method="post">
+
+	<label class="username field">
+		<input class="text" type="text" value="" name="username" id="username1" spellcheck="false" autocorrect="off" placeholder="Username" />
+	</label>
+
+	<label class="password field">
+		<input class="password text" type="password" name="password" id="password1" placeholder="Password"/>
+	</label>
+
+	<div class="extras">
+		<label class="remember">
+			<input type="checkbox" name="rememberMe"  value="1" />
+			<strong>Keep me logged in</strong>
+		</label>
+		<a href="https://quizlet.com/forgotten" title="Retrieve your forgotten username or password" class="forgot wide">Forgot password?</a>	</div>
+
+	<div class="done center">
+		<button type="submit" class="submit button">Log In</button>
+	</div>
+
+	<div class="extras">
+		<a href="https://quizlet.com/forgotten" title="Retrieve your forgotten username or password" class="forgot slim">Forgot password?</a>	</div>
+
+	<div class="hidden">
+		<input type="hidden" value="/19946728/learn-ruby-the-hard-way-keywords-flash-cards/" name="redir" />
+
+			</div>
+
+</form>
+
+<script>
+(function(){var a=new Date,a=a.getHours()+Math.round(a.getMinutes()/60*10)/10;if(5>a||17.5<a)for(var a=document.getElementsByName("rememberMe"),b=0;b<a.length;b++)a[b].checked=!0})();
+</script></section>
+			</div>
+		</div>
+		<a href="https://quizlet.com/sign-up?redir=http%3A%2F%2Fquizlet.com%2F19946728%2Flearn-ruby-the-hard-way-keywords-flash-cards%2F" class="signup link" data-sourcename="global-header-link">Sign Up</a>
+		<a class="google signup button" href="https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=https%3A%2F%2Fquizlet.com%2Fgoogle-login&client_id=520305074949.apps.googleusercontent.com&scope=profile+email&access_type=online&approval_prompt=auto&state=%7B%22state%22%3A%22Z95pv7%22%2C%22reauth%22%3Afalse%2C%22from%22%3A%22%5C%2F19946728%5C%2Flearn-ruby-the-hard-way-keywords-flash-cards%5C%2F%22%7D">
+			<span class="glyph icon google-icon ">&#xe056;</span>			<span class="label">Google Sign In</span>
+		</a>
+	</aside>
+
+		<div id="feedbackContainer" class="dnone">
+
+	<div class="qmodal-title">
+		<span class="glyph icon mail-icon ">&#xe027;</span>		<h2 class="qmodal-title-text">Give us Feedback</h2>
+	</div>
+
+	<form action="/feedback" method="POST">
+		<p>If you&rsquo;re having trouble, want to report a bug, provide a suggestion, or just want to say hello &mdash; please fill out the form below.</p>
+
+		
+		
+		<label class="type">
+							<span class="small qselect">
+					<label>
+						<select name="minorCategory">
+							<option value="">Choose Type</option>
+							<option value="Question / Need Help">Question / Need Help</option>
+							<option value="Suggestion">Suggestion</option>
+							<option value="Bug Report">Bug Report</option>
+							<option value="Just Saying Thanks">Just Saying Thanks</option>
+							<option value="Other Comment / Feedback">Other Comment / Feedback</option>
+						</select>
+					</label>
+				</span>
+					</label>
+
+		<label class="message">
+			<textarea class="text" placeholder="What we can do to make Quizlet even better?" name="feedback"></textarea>
+		</label>
+
+					<label class="email">
+				<strong>What is your email?</strong>
+				<input type="email" name="email" size="25" class="text">
+			</label>
+		
+					<label class="verification">
+				<strong>What is 1 + 3?</strong>
+				<input type="text" id="feedback-verify" name="vfy" size="5" class="text">
+			</label>
+		
+		
+		<button type="submit" class="large submit button">Send Message</button>
+	</form>
+</div>
+
+						
+	</div>
+</header>
+
+	<span class="login-blackout" id="hide-login"></span>
+	<script type="text/javascript">(function(){var a=document.body,b=document.getElementById("header"),c=!1,d=function(){b.className=b.className.replace("logging-in","");a.className=a.className.replace("logging-in","");c=!1};document.getElementById("show-login").onclick=function(){if("simple login"===a.className)return!1;c?d():(b.className+=" logging-in",a.className+=" logging-in",c=!0,document.getElementById("username1").focus());return!1};document.getElementById("hide-login").onclick=d})();
+</script>
+
+
+
+
+<section class="SetHeader">
+
+	<div class="container">
+
+		<div class="SetHeader-setTitle">
+			<div class="SetTitle">
+	<h1 class="SetTitle-title">Learn Ruby the Hard Way: Keywords</h1>
+
+			<h3 class="SetTitle-creator">
+			<a href="/david_gustafson1" title="Visit david_gustafson1's profile"><span class='profile-image' style='background-image:url(http://fb.quizlet.com/hprofile-ak-prn1/49529_1512295628_1296688402_q.jpg);height:21px;width:21px;'></span></a>			38 terms by <a href="/david_gustafson1" title="Visit david_gustafson1's profile">david_gustafson1&nbsp;</a> 		</h3>
+			
+			<div class="SetTitle-studyAstronaut">
+			<div class="StudyAstronaut">
+
+	<div class="StudyAstronaut-astronaut">
+	</div><div class="StudyAstronaut-bridge">
+		<span class="glyph icon arrow-left-icon ">&#xe019;</span>	</div><a class="StudyAstronaut-message" href="/19946728/flashcards">
+		Ready to study?<br>
+		<span class="StudyAstronaut-subdirection">Start with Flashcards</span>
+	</a>
+
+</div>		</div>
+	</div>		</div>
+	
+		<div class="SetHeader-divider"></div>
+	
+		<div class="SetHeader-modes"><div class="SetHeader-ModeButtonWrapper SetHeader-ModeButtonWrapper--flashcards">
+					<h4 class="SetHeader-sectionHeader">Study</h4>
+	<h4 class="SetHeader-sectionHeader SetHeader-sectionHeader--stars-only">Study <span class="glyph icon star-icon ">&#xe041;</span> only</h4>
+
+
+<a href="/19946728/flashcards" class="ModeButton flashcards " data-sourcename="mode-link-flashcards">
+	<span class="ModeButton-inner">
+		<span class="glyph icon flashcards-icon ModeButton-icon">&#xe010;</span>		<span class="ModeButton-name">Flashcards</span>
+			</span>
+
+</a><a href="/19946728/flashcards/starred" class="ModeButton ModeButton--stars-only flashcards " data-sourcename="mode-link-flashcards">
+	<span class="ModeButton-inner">
+		<span class="glyph icon flashcards-icon ModeButton-icon">&#xe010;</span>		<span class="ModeButton-name">Flashcards</span>
+			</span>
+</a>			</div><div class="SetHeader-ModeButtonWrapper SetHeader-ModeButtonWrapper--learn">
+				
+<a href="/19946728/learn" class="ModeButton learn " data-sourcename="mode-link-learn">
+	<span class="ModeButton-inner">
+		<span class="glyph icon learn-icon ModeButton-icon">&#xe011;</span>		<span class="ModeButton-name">Learn</span>
+			</span>
+
+</a><a href="/19946728/learn/starred" class="ModeButton ModeButton--stars-only learn " data-sourcename="mode-link-learn">
+	<span class="ModeButton-inner">
+		<span class="glyph icon learn-icon ModeButton-icon">&#xe011;</span>		<span class="ModeButton-name">Learn</span>
+			</span>
+</a>			</div><div class="SetHeader-ModeButtonWrapper SetHeader-ModeButtonWrapper--speller">
+				
+<a href="/19946728/speller" class="ModeButton speller " data-sourcename="mode-link-speller">
+	<span class="ModeButton-inner">
+		<span class="glyph icon speller-icon ModeButton-icon">&#xe012;</span>		<span class="ModeButton-name">Speller</span>
+			</span>
+
+</a><a href="/19946728/speller/starred" class="ModeButton ModeButton--stars-only speller " data-sourcename="mode-link-speller">
+	<span class="ModeButton-inner">
+		<span class="glyph icon speller-icon ModeButton-icon">&#xe012;</span>		<span class="ModeButton-name">Speller</span>
+			</span>
+</a>			</div><div class="SetHeader-ModeButtonWrapper SetHeader-ModeButtonWrapper--test">
+				
+<a href="/19946728/test" class="ModeButton test " data-sourcename="mode-link-test">
+	<span class="ModeButton-inner">
+		<span class="glyph icon test-icon ModeButton-icon">&#xe029;</span>		<span class="ModeButton-name">Test</span>
+		<span class="ModeButton-status"></span>
+
+	</span>
+
+</a><a href="/19946728/test/starred" class="ModeButton ModeButton--stars-only test " data-sourcename="mode-link-test">
+	<span class="ModeButton-inner">
+		<span class="glyph icon test-icon ModeButton-icon">&#xe029;</span>		<span class="ModeButton-name">Test</span>
+		<span class="ModeButton-status"></span>
+
+	</span>
+</a>			</div><div class="SetHeader-ModeButtonWrapper SetHeader-ModeButtonWrapper--scatter">
+					<h4 class="SetHeader-sectionHeader">Play</h4>
+	<h4 class="SetHeader-sectionHeader SetHeader-sectionHeader--stars-only">Play <span class="glyph icon star-icon ">&#xe041;</span> only</h4>
+
+
+<a href="/19946728/scatter" class="ModeButton scatter " data-sourcename="mode-link-scatter">
+	<span class="ModeButton-inner">
+		<span class="glyph icon scatter-icon ModeButton-icon">&#xe014;</span>		<span class="ModeButton-name">Scatter</span>
+			</span>
+
+</a><a href="/19946728/scatter/starred" class="ModeButton ModeButton--stars-only scatter " data-sourcename="mode-link-scatter">
+	<span class="ModeButton-inner">
+		<span class="glyph icon scatter-icon ModeButton-icon">&#xe014;</span>		<span class="ModeButton-name">Scatter</span>
+			</span>
+</a>			</div><div class="SetHeader-ModeButtonWrapper SetHeader-ModeButtonWrapper--microscatter">
+					<h4 class="SetHeader-sectionHeader">Play</h4>
+	<h4 class="SetHeader-sectionHeader SetHeader-sectionHeader--stars-only">Play <span class="glyph icon star-icon ">&#xe041;</span> only</h4>
+
+
+<a href="/19946728/microscatter" class="ModeButton microscatter " data-sourcename="mode-link-microscatter">
+	<span class="ModeButton-inner">
+		<span class="glyph icon microscatter-icon ModeButton-icon">&#xe014;</span>		<span class="ModeButton-name">Scatter</span>
+			</span>
+
+</a><a href="/19946728/microscatter/starred" class="ModeButton ModeButton--stars-only microscatter " data-sourcename="mode-link-microscatter">
+	<span class="ModeButton-inner">
+		<span class="glyph icon microscatter-icon ModeButton-icon">&#xe014;</span>		<span class="ModeButton-name">Scatter</span>
+			</span>
+</a>			</div><div class="SetHeader-ModeButtonWrapper SetHeader-ModeButtonWrapper--spacerace">
+				
+<a href="https://quizlet.com/19946728/spacerace" class="ModeButton spacerace " data-sourcename="mode-link-spacerace">
+	<span class="ModeButton-inner">
+		<span class="glyph icon spacerace-icon ModeButton-icon">&#xe015;</span>		<span class="ModeButton-name">Space Race</span>
+			</span>
+
+</a><a href="https://quizlet.com/19946728/spacerace/starred" class="ModeButton ModeButton--stars-only spacerace " data-sourcename="mode-link-spacerace">
+	<span class="ModeButton-inner">
+		<span class="glyph icon spacerace-icon ModeButton-icon">&#xe015;</span>		<span class="ModeButton-name">Space Race</span>
+			</span>
+</a>			</div><div class="SetHeader-divider SetHeader-divider--for-tools">
+	
+			</div><div class="SetHeader-setTools">
+				<div class="SetTools">
+	<h4 class="SetHeader-sectionHeader SetHeader-sectionHeader--for-tools">
+		Tools
+	</h4><div class="SetTools-tool-section">
+
+		<div class="SetTools-toolColumn SetTools-toolColumn1">
+
+			<div class="SetTools-tool">
+									<a href="https://quizlet.com/19946728/recreate-set" class="SetTools-toolLink">
+						<span class="glyph icon copy-icon ">&#xe030;</span>						<span class="text">Copy</span>
+					</a>
+							</div><div class="SetTools-tool">
+
+				<a href="#" class="class-tool SetTools-toolLink">
+					<span class="glyph icon class-icon ">&#xe054;</span>					<span class="text">Add to Class</span>
+				</a>
+
+			</div><div class="SetTools-tool">
+
+				<a href="#" class="SetTools-toolLink folder-tool">
+					<span class="glyph icon folder-icon ">&#xe051;</span>					<span class="text">Add to Folder</span>
+				</a>
+
+		</div></div><div class="SetTools-toolColumn SetTools-toolColumn2"><div class="SetTools-tool">
+
+				<a href="#" class="SetTools-toolLink share-tool">
+					<span class="glyph icon share-icon ">&#xe032;</span>					<span class="text">Share</span>
+				</a>
+
+			</div><div class="SetTools-tool">
+
+				<a class="SetTools-toolLink" href="/19946728/print">
+					<span class="glyph icon print-icon ">&#xe075;</span>					<span class="text">Print</span>
+				</a>
+
+			</div><div class="poppable hoverable SetTools-tool">
+
+				<a class="activate SetTools-toolLink" href="#">
+					<span class="glyph icon more-icon ">&#xe077;</span>					<span class="text ">More</span>
+				</a>
+
+				<div class="popout four-items">
+
+					<span class="bridge"><span class="glyph icon arrow-up-icon ">&#xe017;</span></span>
+					<a href="/combine/19946728" class="SetTools-moreTool SetTools-moreTool--combine">
+						<span class="glyph icon combine-icon ">&#xe031;</span>						<span class="label">Combine</span>
+					</a>
+
+					
+					<a href="/19946728/export" class="SetTools-moreTool SetTools-moreTool--export">
+						<span class="glyph icon export-icon ">&#xe079;</span>						<span class="label">Export</span>
+					</a>
+
+											<a href="/19946728/embed" class="SetTools-moreTool SetTools-moreTool--embed embed-tool">
+							<span class="glyph icon embed-icon ">&#xe033;</span>							<span class="label">Embed</span>
+						</a>
+					
+					<a href="/set/19946728/flags/add" class="SetTools-moreTool SetTools-moreTool--report report-tool">
+						<span class="glyph icon alert-icon ">&#xe034;</span>						<span class="label">Report</span>
+					</a>
+
+									</div>
+
+			</div>
+		</div>
+	</div>
+</div>			</div>
+		</div>
+	
+		<div class="add-to-folders-modal qmodal-preloaded">
+	
+		<p class='qmodal-login-required'>
+			<a href="https://quizlet.com/login?redir=http%3A%2F%2Fquizlet.com%2F19946728%2Flearn-ruby-the-hard-way-keywords-flash-cards%2F" rel="nofollow">Log in</a> to add this set to a folder.		</p>
+
+	</div>		<div class="new-folder-modal">
+			<form class="new-folder-form" action="//quizlet.com/new-folder" method="POST">
+
+	<div class="qmodal-title">
+		<span class="glyph icon folder-icon ">&#xe051;</span>		<h2 class="qmodal-title-text">Create a new folder</h2>
+	</div>
+
+	<label>
+		<strong>Folder Name</strong>
+		<input type="text" name="name" placeholder="Folder Name" class="new-folder-name" />
+	</label>
+
+	<label>
+		<strong>Folder Description (optional)</strong>
+		<textarea rows='3' name="description" placeholder="Folder Description (optional)"></textarea>
+	</label>
+
+	<input type="hidden" name="setId" id="setToAdd" value="19946728" />
+	<button class="button" type="submit">Create</button>
+</form>
+
+		</div>
+		<div class="few classes qmodal-preloaded add-to-classes-modal">
+
+	
+		<p class='qmodal-login-required'>
+			<a href="https://quizlet.com/login?redir=http%3A%2F%2Fquizlet.com%2F19946728%2Flearn-ruby-the-hard-way-keywords-flash-cards%2F" rel="nofollow">Log in</a> to add this set to a class.		</p>
+
+	
+</div>
+		<div class="share-tool-modal qmodal-preloaded">
+	<div class="qmodal-title">
+		<span class="glyph icon share-icon ">&#xe032;</span>		<h2 class="qmodal-title-text">Share this set</h2>
+	</div>
+
+	<form class="email share-item qmodal-item" action="/19946728/email">
+		<div class="qmodal-confirmation email-confirmation"></div>
+
+		<label class="recipient-wrap">
+			<span class="label">Email a link to this page</span>
+
+			<input class="text qmodal-input-with-button" type="email" name="recipient" id="emailRecipient" placeholder="Email address"
+			/><button class="button qmodal-button-with-input" type="submit">Send Email</button>
+
+		</label>
+
+		<input name="qnonce" type="hidden" value="iHR4uSXdTRadLCRBxSekjQ6vy1MQoF-TpGfM5DPTCHLh28TW0ZY76BOeiRJZFZZ-23THZSidKqxg6NJbt9OY8g">	</form>
+
+	<form class="short-url share-item qmodal-item">
+		<label>
+			<span class="label">Short URL</span>
+			<input type="text" class="text" readonly value="http://quizlet.com/_bvizs" onclick="this.select()" />
+		</label>
+	</form>
+
+		<div class="destinations">
+		<a class="share-item qmodal-item" href="#" onclick="window.open('http://twitter.com/home?status=Studying+on+Quizlet%3A+Learn+Ruby+the+Hard+Way%3A+Keywords+http%3A%2F%2Fquizlet.com%2F_bvizs','','width=626,height=436');return false;" data-sourcename="share-set-twitter">
+			<span class="label-text">Share on Twitter</span>
+			<span class="glyph icon twitter-icon ">&#xe058;</span>		</a>
+
+		<a class="share-item qmodal-item" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'','width=626,height=436');return false;" data-sourcename="share-set-facebook">
+			<span class="label-text">Share on Facebook</span>
+			<span class="glyph icon facebook-icon ">&#xe055;</span>		</a>
+
+		<a class="share-item" href="#" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fquizlet.com%2F_bvizs&amp;description=Learn%20Ruby%20the%20Hard%20Way%3A%20Keywords%20on%20Quizlet&amp;media=http%3A%2F%2Fquizlet.com%2Fa%2Fi%2Fq.DAfm.png','','width=750,height=318');return false;" data-sourcename="share-set-pinterest">
+			<span class="label-text">Share on Pinterest</span>
+			<span class="glyph icon pinterest-icon ">&#xe081;</span>		</a>
+	</div>
+	
+</div>
+	</div>
+</section>
+<nav class="tabs-bar">
+	<div class="container">
+		<ul class="tabs has-3-tabs">
+								<li class="terms-tab">
+				<a href="/19946728/learn-ruby-the-hard-way-keywords-flash-cards/" class="pjax">
+					List									</a>
+			</li>
+								<li class="scores-tab">
+				<a href="/19946728/scores" class="pjax">
+					Scores									</a>
+			</li>
+								<li class="info-tab">
+				<a href="/19946728/info" class="pjax">
+					Info									</a>
+			</li>
+				</ul>
+	</div>
+</nav>
+
+<div class="container qad-is-showing">
+	<main class="page" id="page">
+		
+<div id="terms" class="layout-list multi-column">
+		
+	<div class="skyscraper ad">
+		<span class="ad-label">Advertisement</span>
+<a class="upgrade-link" href="https://quizlet.com/upgrade?source=ad" target="_blank">Upgrade to remove ads</a>
+		<div id='dfp-SetSidebarV2' style='width:160px;height:600px' class='ad noprint '><script type='text/javascript'>if(DFPADS)googletag.cmd.push(function(){googletag.display("dfp-SetSidebarV2");});</script><span class="patch one"></span><span class="patch two"></span><span class="patch three"></span><span class="patch four"></span></div>	</div>
+
+
+	<article class="subpage" id="subpage">
+		
+<header class="page-top has-description">
+
+			<p class="description">A set of important keywords that every Ruby programmer should know! Much thanks to Ruby-Doc.org.
+
+(Based off of Zed Shaw&#039;s &quot;Learn Ruby the Hard Way&quot; programming tutorial.)</p>
+	
+	<nav class="controls">
+		
+		
+		<div class="study-starred segmented-control">
+			<a class="first study-all">
+				Study all 38 terms			</a><a class="last study-selected">
+				Study <span class="selected-count">0</span> <span class="glyph icon star-icon ">&#xe041;</span><span class="selected-word singular">term</span><span class="selected-word plural">terms</span> only
+			</a>
+		</div>
+
+			</nav>
+
+</header>
+<article class="terms">
+
+		
+		
+				<div data-id="668211744" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>alias</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>To create a second name for the variable or method.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211745" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>and</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>A command that appends two or more objects together.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211746" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>BEGIN</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Designates code that must be run unconditionally at the beginning of the program before any other.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211747" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>begin</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Delimits a &quot;begin&quot; block of code, which can allow the use of while and until in modifier position with multi-line statements.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211748" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>break</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Gives an unconditional termination to a code block, and is usually placed with an argument.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211749" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>case</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>starts a case statement; this block of code will output a result and end when it&#039;s terms are fulfilled, which are defined with when or else.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211750" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>class</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Opens a class definition block, which can later be reopened and added to with variables and even functions.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211751" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>def</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Used to define a function.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211752" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>defined?</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>A boolean logic function that asks whether or not a targeted expression refers to anything recognizable in Ruby; i.e. literal object, local variable that has been initialized, method name visible from the current scope, etc.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211753" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>do</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Paired with end, this can delimit a code block, much like curly braces; however, curly braces retain higher precedence.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211754" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>else</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Gives an &quot;otherwise&quot; within a function, if-statement, or for-loop, i.e. if cats = cute, puts &quot;Yay!&quot; else puts &quot;Oh, a cat.&quot;</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211755" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>elsif</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Much like else, but has a higher precedence, and is usually paired with terms.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211756" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>END</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Designates, via code block, code to be executed just prior to program termination.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211757" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>end</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Marks the end of a while, until, begin, if, def, class, or other keyword-based, block-based construct.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211758" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>ensure</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Marks the final, optional clause of a begin/end block, generally in cases where the block also contains a rescue clause. The code in this term&#039;s clause is guaranteed to be executed, whether control flows to a rescue block or not.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211759" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>false</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>denotes a special object, the sole instance of FalseClass. false and nil are the only objects that evaluate to Boolean falsehood in Ruby (informally, that cause an if condition to fail.)</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211760" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>for</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>A loop constructor; used in for-loops.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211761" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>if</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Ruby&#039;s basic conditional statement constructor.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211762" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>in</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Used with for, helps define a for-loop.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211763" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>module</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Opens a library, or module, within a Ruby Stream.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211764" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>next</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Bumps an iterator, or a while or until block, to the next iteration, unconditionally and without executing whatever may remain of the block.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211765" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>nil</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>A special &quot;non-object&quot;; it is, in fact, an object (the sole instance of NilClass), but connotes absence and indeterminacy. nil and false are the only two objects in Ruby that have Boolean falsehood (informally, that cause an if condition to fail).</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211766" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>not</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Boolean negation. i.e. not true # false, not 10 # false, not false # true.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211767" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>or</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Boolean or. Differs from || in that or has lower precedence.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211768" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>redo</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Causes unconditional re-execution of a code block, with the same parameter bindings as the current execution.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211769" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>rescue</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Designates an exception-handling clause that can occur either inside a begin&lt;code&gt;/&lt;code&gt;end block, inside a method definition (which implies begin), or in modifier position (at the end of a statement).</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211770" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>retry</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Inside a rescue clause, causes Ruby to return to the top of the enclosing code (the begin keyword, or top of method or block) and try executing the code again.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211771" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>return</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Inside a method definition, executes the ensure clause, if present, and then returns control to the context of the method call. Takes an optional argument (defaulting to nil), which serves as the return value of the method. Multiple values in argument position will be returned in an array.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211772" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>self</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>The &quot;current object&quot; and the default receiver of messages (method calls) for which no explicit receiver is specified. Which object plays the role of self depends on the context.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211773" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>super</span>	</h3>
+
+			<p class="definition no-audio ">
+			<span class='qDef lang-en'>Called from a method, searches along the method lookup path (the classes and modules available to the current object) for the next method of the same name as the one being executed. Such method, if present, may be defined in the superclass of the object&#039;s class, but may also be defined in the superclass&#039;s superclass or any class on the upward path, as well as any module mixed in to any of those classes.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211774" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>then</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Optional component of conditional statements (if, unless, when). Never mandatory, but allows for one-line conditionals without semi-colons.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211775" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>true</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>The sole instance of the special class TrueClass. true encapsulates Boolean truth; however, &lt;emph&gt;all&lt;/emph&gt; objects in Ruby are true in the Boolean sense (informally, they cause an if test to succeed), with the exceptions of false and nil.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211776" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>undef</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Undefines a given method, for the class or module in which it&#039;s called. If the method is defined higher up in the lookup path (such as by a superclass), it can still be called by instances classes higher up.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211777" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>unless</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>The negative equivalent of if. i.e. unless y.score &gt; 10 puts &quot;Sorry; you needed 10 points to win.&quot; end.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211778" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>until</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>The inverse of while: executes code until a given condition is true, i.e., while it is not true. The semantics are the same as those of while.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211779" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>when</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Same as case.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211780" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>while</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Takes a condition argument, and executes the code that follows (up to a matching end delimiter) while the condition is true.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+		
+				<div data-id="668211781" class="term has-audio">
+			
+<div class="details-wrap">
+	<div class="details">
+
+		<div class="icons">
+
+			<a class="star">
+				<span class="glyph icon star-icon ">&#xe041;</span>				<span class="glyph icon star-empty-icon ">&#xe042;</span>			</a>
+
+			<a class="play-audio" title="Play audio for this term">
+				<span class="glyph icon audio-icon ">&#xe012;</span>			</a>
+
+			
+					</div>
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+
+<div class="text">
+
+	<h3 class="word has-audio ">
+		<span class='qWord lang-en'>yield</span>	</h3>
+
+			<p class="definition has-audio ">
+			<span class='qDef lang-en'>Called from inside a method body, yields control to the code block (if any) supplied as part of the method call. If no code block has been supplied, calling yield raises an exception.</span>		</p>
+	
+</div>
+
+
+		</div>
+
+			
+			</article>
+	
+<span id="image-fullscreen-cover"></span>
+
+	</article></div>
+
+<section class="permissions-notice waiting">
+	<h3>Please allow access to your computer&rsquo;s microphone to use Voice Recording.</h3>
+
+	<div class="for-flash">
+		<div class="recorder-container"></div>
+		<p class="help">Having trouble? <a href="/help/faq-why-cant-i-click-the-flash-player-allow-button" target="_blank">Click here</a> for help.</p>
+		<span class="arrow"><span class="glyph icon arrow-right-icon ">&#xe018;</span></span>
+	</div>
+</section>
+
+<div class="permissions-arrow">
+	<span class="leg-1"></span>
+	<span class="leg-2"></span>
+	<span class="pointer"><span class="glyph icon arrow-up-icon ">&#xe017;</span></span>
+</div>
+
+<section class="permissions-notice denied">
+	<h2 class="no-access">We can&rsquo;t access your microphone!</h2>
+	<div class="for-html5">
+		<div class="for-chrome">
+			<h3>Click the icon above to update your browser permissions above and try again</h3>
+
+			<p>Example:</p>
+			<div class="diagram"></div>
+		</div>
+	</div>
+
+	<div class="try-again">
+		<h3>Reload the page to try again!</h3>
+		<a class="button" href="/19946728/learn-ruby-the-hard-way-keywords-flash-cards/">Reload</a>
+	</div>
+
+	<div class="try-again flash-zoom">
+		<h2 class="mac">Press Cmd-0 to reset your zoom</h2>
+		<h2 class="windows">Press Ctrl-0 to reset your zoom</h2>
+		<h3>It looks like your browser might be zoomed in or out. Your browser needs to be zoomed to a normal size to record audio.</h3>
+	</div>
+</section>
+
+<section class="permissions-notice incompatible">
+	<h3>Please <a href="http://get.adobe.com/flashplayer/" target="_blank">upgrade Flash</a> or <a href="https://www.google.com/chrome/" target="_blank">install Chrome</a><br>to use Voice Recording.</h3>
+	<p class="help">For more help, see our <a href="/help/faq-troubleshooting-with-voice-recording" target="_blank">troubleshooting page</a>.</p>
+</section>
+
+<section class="permissions-notice muted">
+	<h2>Your microphone is muted</h2>
+	<h3>For help fixing this issue, see <a href="/help/faq-is-my-mic-not-working" target="_blank">this FAQ</a>.</h3>
+</section>
+
+<div class="term-detail-tooltips">
+	<div class="star tooltip">
+		<h5>Star this term</h5>
+		<p>You can study starred terms together</p>
+		<span class="bridge"><span class="glyph icon arrow-down-icon ">&#xe020;</span></span>	</div>
+
+	<div class="edit custom-audio tooltip">
+		<h5>NEW! Voice Recording</h5>
+				<span class="bridge"><span class="glyph icon arrow-down-icon ">&#xe020;</span></span>	</div>
+
+	<div class="blank tooltip">
+		<p class="tip"></p>
+		<span class="bridge"><span class="glyph icon arrow-down-icon ">&#xe020;</span></span>	</div>
+</div>
+<script>
+QWait('SetPageObject', function() {
+	CustomAudio.init(window.setPage, {"maxDuration":30000,"webSocketUrl":"wss:\/\/quizlet.com\/voice-recorder","ajaxChunkUrl":"http:\/\/quizlet.com\/custom-audio\/upload-pcm-chunk","ajaxFinishedUrl":"http:\/\/quizlet.com\/custom-audio\/finish-chunked-pcm","connectionPrimingUrl":"http:\/\/s3-us-west-1.amazonaws.com\/voice.quizlet.com\/favicon.ico","swfPath":"http:\/\/quizlet.com\/a\/i\/FlashRecorder.KHvB.swf","qecookies":"s59oDmyfPDubjbu-oAq8K76l-XzJbtZ0Q2YRIB4.wq6i0RS4Iiv1d5iVl72i1eHm43wJ.ZIzcarWrHCOvNuCvNthJGYuBywNxGIdyM7q4-76tjHV5NPfMF8BnuS8Ph-Pw9Mb3Vss7ZftXD1yQ9mhflZ0N0sk5CH8MBCUYE4XlAk","workerPath":"http:\/\/quizlet.com\/a\/j\/en\/custom_audio\/recorder\/html5\/worker.7HY4U.js","canRecord":false,"showTeaser":false,"modifyAudioNonce":"rLPJM3QmIQvqN.R3vhomsN3Ssyi5mrNJ3MkD-tQrcJPh28TW0ZY76BOeiRJZFZZ-23THZSidKqxg6NJbt9OY8g"});
+});
+</script>
+	</main>
+</div>
+
+
+<script>
+QWait('dom', 'SetPage', function() {
+	window.setPage = new SetPage({"setId":19946728,"selectedTermsQnonce":"qewVIRg8INvXhYl9P7AuTFSI4dTuWLhVnvXL12L1un7h28TW0ZY76BOeiRJZFZZ-23THZSidKqxg6NJbt9OY8g","discussionQnonce":"PwFT5d77ZAnw0VldFdlrTGBRxNAP-oAcurYILQzYGSfh28TW0ZY76BOeiRJZFZZ-23THZSidKqxg6NJbt9OY8g","notificationCount":0,"lastDiscussionId":-1}, [{"id":668211744,"photo":"","word":"alias","definition":"To create a second name for the variable or method.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=YWxpYXM&s=E8v0XKJ-","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=VG8gY3JlYXRlIGEgc2Vjb25kIG5hbWUgZm9yIHRoZSB2YXJpYWJsZSBvciBtZXRob2Qu&s=1YieKzKC","has_def_custom_audio":false},{"id":668211745,"photo":"","word":"and","definition":"A command that appends two or more objects together.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=YW5k&s=bkdLN8wo","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=QSBjb21tYW5kIHRoYXQgYXBwZW5kcyB0d28gb3IgbW9yZSBvYmplY3RzIHRvZ2V0aGVyLg&s=DhOPJYVt","has_def_custom_audio":false},{"id":668211746,"photo":"","word":"BEGIN","definition":"Designates code that must be run unconditionally at the beginning of the program before any other.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=QkVHSU4&s=LOm7GI4m","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=RGVzaWduYXRlcyBjb2RlIHRoYXQgbXVzdCBiZSBydW4gdW5jb25kaXRpb25hbGx5IGF0IHRoZSBiZWdpbm5pbmcgb2YgdGhlIHByb2dyYW0gYmVmb3JlIGFueSBvdGhlci4&s=azV8xvbP","has_def_custom_audio":false},{"id":668211747,"photo":"","word":"begin","definition":"Delimits a \"begin\" block of code, which can allow the use of while and until in modifier position with multi-line statements.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=YmVnaW4&s=vlTOdhZX","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=RGVsaW1pdHMgYSAiYmVnaW4iIGJsb2NrIG9mIGNvZGUsIHdoaWNoIGNhbiBhbGxvdyB0aGUgdXNlIG9mIHdoaWxlIGFuZCB1bnRpbCBpbiBtb2RpZmllciBwb3NpdGlvbiB3aXRoIG11bHRpLWxpbmUgc3RhdGVtZW50cy4&s=RWiXj4sJ","has_def_custom_audio":false},{"id":668211748,"photo":"","word":"break","definition":"Gives an unconditional termination to a code block, and is usually placed with an argument.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=YnJlYWs&s=x0EFOBOR","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=R2l2ZXMgYW4gdW5jb25kaXRpb25hbCB0ZXJtaW5hdGlvbiB0byBhIGNvZGUgYmxvY2ssIGFuZCBpcyB1c3VhbGx5IHBsYWNlZCB3aXRoIGFuIGFyZ3VtZW50Lg&s=62MVc6-0","has_def_custom_audio":false},{"id":668211749,"photo":"","word":"case","definition":"starts a case statement; this block of code will output a result and end when it's terms are fulfilled, which are defined with when or else.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=Y2FzZQ&s=6GI8iBVM","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=c3RhcnRzIGEgY2FzZSBzdGF0ZW1lbnQ7IHRoaXMgYmxvY2sgb2YgY29kZSB3aWxsIG91dHB1dCBhIHJlc3VsdCBhbmQgZW5kIHdoZW4gaXQncyB0ZXJtcyBhcmUgZnVsZmlsbGVkLCB3aGljaCBhcmUgZGVmaW5lZCB3aXRoIHdoZW4gb3IgZWxzZS4&s=qnXdHV8u","has_def_custom_audio":false},{"id":668211750,"photo":"","word":"class","definition":"Opens a class definition block, which can later be reopened and added to with variables and even functions.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=Y2xhc3M&s=xkJrlorY","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=T3BlbnMgYSBjbGFzcyBkZWZpbml0aW9uIGJsb2NrLCB3aGljaCBjYW4gbGF0ZXIgYmUgcmVvcGVuZWQgYW5kIGFkZGVkIHRvIHdpdGggdmFyaWFibGVzIGFuZCBldmVuIGZ1bmN0aW9ucy4&s=aIJ2ogrk","has_def_custom_audio":false},{"id":668211751,"photo":"","word":"def","definition":"Used to define a function.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=ZGVm&s=Glup1eqF","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=VXNlZCB0byBkZWZpbmUgYSBmdW5jdGlvbi4&s=uYoxW6TU","has_def_custom_audio":false},{"id":668211752,"photo":"","word":"defined?","definition":"A boolean logic function that asks whether or not a targeted expression refers to anything recognizable in Ruby; i.e. literal object, local variable that has been initialized, method name visible from the current scope, etc.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=ZGVmaW5lZD8&s=WBMY5Kjm","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=QSBib29sZWFuIGxvZ2ljIGZ1bmN0aW9uIHRoYXQgYXNrcyB3aGV0aGVyIG9yIG5vdCBhIHRhcmdldGVkIGV4cHJlc3Npb24gcmVmZXJzIHRvIGFueXRoaW5nIHJlY29nbml6YWJsZSBpbiBSdWJ5OyBpLmUuIGxpdGVyYWwgb2JqZWN0LCBsb2NhbCB2YXJpYWJsZSB0aGF0IGhhcyBiZWVuIGluaXRpYWxpemVkLCBtZXRob2QgbmFtZSB2aXNpYmxlIGZyb20gdGhlIGN1cnJlbnQgc2NvcGUsIGV0Yy4&s=wOzeTKrF","has_def_custom_audio":false},{"id":668211753,"photo":"","word":"do","definition":"Paired with end, this can delimit a code block, much like curly braces; however, curly braces retain higher precedence.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=ZG8&s=rcOrS3dA","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=UGFpcmVkIHdpdGggZW5kLCB0aGlzIGNhbiBkZWxpbWl0IGEgY29kZSBibG9jaywgbXVjaCBsaWtlIGN1cmx5IGJyYWNlczsgaG93ZXZlciwgY3VybHkgYnJhY2VzIHJldGFpbiBoaWdoZXIgcHJlY2VkZW5jZS4&s=eC.02FqU","has_def_custom_audio":false},{"id":668211754,"photo":"","word":"else","definition":"Gives an \"otherwise\" within a function, if-statement, or for-loop, i.e. if cats = cute, puts \"Yay!\" else puts \"Oh, a cat.\"","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=ZWxzZQ&s=v-BuYUfq","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=R2l2ZXMgYW4gIm90aGVyd2lzZSIgd2l0aGluIGEgZnVuY3Rpb24sIGlmLXN0YXRlbWVudCwgb3IgZm9yLWxvb3AsIGkuZS4gaWYgY2F0cyA9IGN1dGUsIHB1dHMgIllheSEiIGVsc2UgcHV0cyAiT2gsIGEgY2F0LiI&s=PRpsuCgH","has_def_custom_audio":false},{"id":668211755,"photo":"","word":"elsif","definition":"Much like else, but has a higher precedence, and is usually paired with terms.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=ZWxzaWY&s=Dgz5z.kk","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=TXVjaCBsaWtlIGVsc2UsIGJ1dCBoYXMgYSBoaWdoZXIgcHJlY2VkZW5jZSwgYW5kIGlzIHVzdWFsbHkgcGFpcmVkIHdpdGggdGVybXMu&s=QbQLwkgv","has_def_custom_audio":false},{"id":668211756,"photo":"","word":"END","definition":"Designates, via code block, code to be executed just prior to program termination.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=RU5E&s=1j4sn0NX","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=RGVzaWduYXRlcywgdmlhIGNvZGUgYmxvY2ssIGNvZGUgdG8gYmUgZXhlY3V0ZWQganVzdCBwcmlvciB0byBwcm9ncmFtIHRlcm1pbmF0aW9uLg&s=rJz6Axpl","has_def_custom_audio":false},{"id":668211757,"photo":"","word":"end","definition":"Marks the end of a while, until, begin, if, def, class, or other keyword-based, block-based construct.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=ZW5k&s=VOlD4..Y","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=TWFya3MgdGhlIGVuZCBvZiBhIHdoaWxlLCB1bnRpbCwgYmVnaW4sIGlmLCBkZWYsIGNsYXNzLCBvciBvdGhlciBrZXl3b3JkLWJhc2VkLCBibG9jay1iYXNlZCBjb25zdHJ1Y3Qu&s=.QNjCNLN","has_def_custom_audio":false},{"id":668211758,"photo":"","word":"ensure","definition":"Marks the final, optional clause of a begin\/end block, generally in cases where the block also contains a rescue clause. The code in this term's clause is guaranteed to be executed, whether control flows to a rescue block or not.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=ZW5zdXJl&s=5m.1YcDD","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=TWFya3MgdGhlIGZpbmFsLCBvcHRpb25hbCBjbGF1c2Ugb2YgYSBiZWdpbi9lbmQgYmxvY2ssIGdlbmVyYWxseSBpbiBjYXNlcyB3aGVyZSB0aGUgYmxvY2sgYWxzbyBjb250YWlucyBhIHJlc2N1ZSBjbGF1c2UuIFRoZSBjb2RlIGluIHRoaXMgdGVybSdzIGNsYXVzZSBpcyBndWFyYW50ZWVkIHRvIGJlIGV4ZWN1dGVkLCB3aGV0aGVyIGNvbnRyb2wgZmxvd3MgdG8gYSByZXNjdWUgYmxvY2sgb3Igbm90Lg&s=tNbZ4opy","has_def_custom_audio":false},{"id":668211759,"photo":"","word":"false","definition":"denotes a special object, the sole instance of FalseClass. false and nil are the only objects that evaluate to Boolean falsehood in Ruby (informally, that cause an if condition to fail.)","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=ZmFsc2U&s=ypTWzq5p","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=ZGVub3RlcyBhIHNwZWNpYWwgb2JqZWN0LCB0aGUgc29sZSBpbnN0YW5jZSBvZiBGYWxzZUNsYXNzLiBmYWxzZSBhbmQgbmlsIGFyZSB0aGUgb25seSBvYmplY3RzIHRoYXQgZXZhbHVhdGUgdG8gQm9vbGVhbiBmYWxzZWhvb2QgaW4gUnVieSAoaW5mb3JtYWxseSwgdGhhdCBjYXVzZSBhbiBpZiBjb25kaXRpb24gdG8gZmFpbC4p&s=ZSahgjin","has_def_custom_audio":false},{"id":668211760,"photo":"","word":"for","definition":"A loop constructor; used in for-loops.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=Zm9y&s=zgPL-k8m","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=QSBsb29wIGNvbnN0cnVjdG9yOyB1c2VkIGluIGZvci1sb29wcy4&s=rB1uWZl4","has_def_custom_audio":false},{"id":668211761,"photo":"","word":"if","definition":"Ruby's basic conditional statement constructor.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=aWY&s=388pfRQP","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=UnVieSdzIGJhc2ljIGNvbmRpdGlvbmFsIHN0YXRlbWVudCBjb25zdHJ1Y3Rvci4&s=zXLnx-bW","has_def_custom_audio":false},{"id":668211762,"photo":"","word":"in","definition":"Used with for, helps define a for-loop.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=aW4&s=cd3piYRU","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=VXNlZCB3aXRoIGZvciwgaGVscHMgZGVmaW5lIGEgZm9yLWxvb3Au&s=auxUuDoL","has_def_custom_audio":false},{"id":668211763,"photo":"","word":"module","definition":"Opens a library, or module, within a Ruby Stream.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=bW9kdWxl&s=G2Q7vMXl","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=T3BlbnMgYSBsaWJyYXJ5LCBvciBtb2R1bGUsIHdpdGhpbiBhIFJ1YnkgU3RyZWFtLg&s=YCz.ic5p","has_def_custom_audio":false},{"id":668211764,"photo":"","word":"next","definition":"Bumps an iterator, or a while or until block, to the next iteration, unconditionally and without executing whatever may remain of the block.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=bmV4dA&s=jMBAp91R","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=QnVtcHMgYW4gaXRlcmF0b3IsIG9yIGEgd2hpbGUgb3IgdW50aWwgYmxvY2ssIHRvIHRoZSBuZXh0IGl0ZXJhdGlvbiwgdW5jb25kaXRpb25hbGx5IGFuZCB3aXRob3V0IGV4ZWN1dGluZyB3aGF0ZXZlciBtYXkgcmVtYWluIG9mIHRoZSBibG9jay4&s=Bs-O1Qgk","has_def_custom_audio":false},{"id":668211765,"photo":"","word":"nil","definition":"A special \"non-object\"; it is, in fact, an object (the sole instance of NilClass), but connotes absence and indeterminacy. nil and false are the only two objects in Ruby that have Boolean falsehood (informally, that cause an if condition to fail).","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=bmls&s=jQ.uI.ky","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=QSBzcGVjaWFsICJub24tb2JqZWN0IjsgaXQgaXMsIGluIGZhY3QsIGFuIG9iamVjdCAodGhlIHNvbGUgaW5zdGFuY2Ugb2YgTmlsQ2xhc3MpLCBidXQgY29ubm90ZXMgYWJzZW5jZSBhbmQgaW5kZXRlcm1pbmFjeS4gbmlsIGFuZCBmYWxzZSBhcmUgdGhlIG9ubHkgdHdvIG9iamVjdHMgaW4gUnVieSB0aGF0IGhhdmUgQm9vbGVhbiBmYWxzZWhvb2QgKGluZm9ybWFsbHksIHRoYXQgY2F1c2UgYW4gaWYgY29uZGl0aW9uIHRvIGZhaWwpLg&s=dWQ.P.KX","has_def_custom_audio":false},{"id":668211766,"photo":"","word":"not","definition":"Boolean negation. i.e. not true # false, not 10 # false, not false # true.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=bm90&s=ISbDt01B","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=Qm9vbGVhbiBuZWdhdGlvbi4gaS5lLiBub3QgdHJ1ZSAjIGZhbHNlLCBub3QgMTAgIyBmYWxzZSwgbm90IGZhbHNlICMgdHJ1ZS4&s=q-yb4dai","has_def_custom_audio":false},{"id":668211767,"photo":"","word":"or","definition":"Boolean or. Differs from || in that or has lower precedence.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=b3I&s=59C0JXO.","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=Qm9vbGVhbiBvci4gRGlmZmVycyBmcm9tIHx8IGluIHRoYXQgb3IgaGFzIGxvd2VyIHByZWNlZGVuY2Uu&s=UEjrihdk","has_def_custom_audio":false},{"id":668211768,"photo":"","word":"redo","definition":"Causes unconditional re-execution of a code block, with the same parameter bindings as the current execution.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=cmVkbw&s=Y5CLsUSr","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=Q2F1c2VzIHVuY29uZGl0aW9uYWwgcmUtZXhlY3V0aW9uIG9mIGEgY29kZSBibG9jaywgd2l0aCB0aGUgc2FtZSBwYXJhbWV0ZXIgYmluZGluZ3MgYXMgdGhlIGN1cnJlbnQgZXhlY3V0aW9uLg&s=sMWdFiXC","has_def_custom_audio":false},{"id":668211769,"photo":"","word":"rescue","definition":"Designates an exception-handling clause that can occur either inside a begin<code>\/<code>end block, inside a method definition (which implies begin), or in modifier position (at the end of a statement).","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=cmVzY3Vl&s=8BCz9T3-","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=RGVzaWduYXRlcyBhbiBleGNlcHRpb24taGFuZGxpbmcgY2xhdXNlIHRoYXQgY2FuIG9jY3VyIGVpdGhlciBpbnNpZGUgYSBiZWdpbjxjb2RlPi88Y29kZT5lbmQgYmxvY2ssIGluc2lkZSBhIG1ldGhvZCBkZWZpbml0aW9uICh3aGljaCBpbXBsaWVzIGJlZ2luKSwgb3IgaW4gbW9kaWZpZXIgcG9zaXRpb24gKGF0IHRoZSBlbmQgb2YgYSBzdGF0ZW1lbnQpLg&s=Fv-H.S9k","has_def_custom_audio":false},{"id":668211770,"photo":"","word":"retry","definition":"Inside a rescue clause, causes Ruby to return to the top of the enclosing code (the begin keyword, or top of method or block) and try executing the code again.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=cmV0cnk&s=17GL-sQa","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=SW5zaWRlIGEgcmVzY3VlIGNsYXVzZSwgY2F1c2VzIFJ1YnkgdG8gcmV0dXJuIHRvIHRoZSB0b3Agb2YgdGhlIGVuY2xvc2luZyBjb2RlICh0aGUgYmVnaW4ga2V5d29yZCwgb3IgdG9wIG9mIG1ldGhvZCBvciBibG9jaykgYW5kIHRyeSBleGVjdXRpbmcgdGhlIGNvZGUgYWdhaW4u&s=467.NQmu","has_def_custom_audio":false},{"id":668211771,"photo":"","word":"return","definition":"Inside a method definition, executes the ensure clause, if present, and then returns control to the context of the method call. Takes an optional argument (defaulting to nil), which serves as the return value of the method. Multiple values in argument position will be returned in an array.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=cmV0dXJu&s=uqYErlob","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=SW5zaWRlIGEgbWV0aG9kIGRlZmluaXRpb24sIGV4ZWN1dGVzIHRoZSBlbnN1cmUgY2xhdXNlLCBpZiBwcmVzZW50LCBhbmQgdGhlbiByZXR1cm5zIGNvbnRyb2wgdG8gdGhlIGNvbnRleHQgb2YgdGhlIG1ldGhvZCBjYWxsLiBUYWtlcyBhbiBvcHRpb25hbCBhcmd1bWVudCAoZGVmYXVsdGluZyB0byBuaWwpLCB3aGljaCBzZXJ2ZXMgYXMgdGhlIHJldHVybiB2YWx1ZSBvZiB0aGUgbWV0aG9kLiBNdWx0aXBsZSB2YWx1ZXMgaW4gYXJndW1lbnQgcG9zaXRpb24gd2lsbCBiZSByZXR1cm5lZCBpbiBhbiBhcnJheS4&s=LZDQs8JH","has_def_custom_audio":false},{"id":668211772,"photo":"","word":"self","definition":"The \"current object\" and the default receiver of messages (method calls) for which no explicit receiver is specified. Which object plays the role of self depends on the context.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=c2VsZg&s=T5vm53Zf","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=VGhlICJjdXJyZW50IG9iamVjdCIgYW5kIHRoZSBkZWZhdWx0IHJlY2VpdmVyIG9mIG1lc3NhZ2VzIChtZXRob2QgY2FsbHMpIGZvciB3aGljaCBubyBleHBsaWNpdCByZWNlaXZlciBpcyBzcGVjaWZpZWQuIFdoaWNoIG9iamVjdCBwbGF5cyB0aGUgcm9sZSBvZiBzZWxmIGRlcGVuZHMgb24gdGhlIGNvbnRleHQu&s=iF2QYIWh","has_def_custom_audio":false},{"id":668211773,"photo":"","word":"super","definition":"Called from a method, searches along the method lookup path (the classes and modules available to the current object) for the next method of the same name as the one being executed. Such method, if present, may be defined in the superclass of the object's class, but may also be defined in the superclass's superclass or any class on the upward path, as well as any module mixed in to any of those classes.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=c3VwZXI&s=IzEiYBhO","has_word_custom_audio":false,"def_audio":false,"has_def_custom_audio":false},{"id":668211774,"photo":"","word":"then","definition":"Optional component of conditional statements (if, unless, when). Never mandatory, but allows for one-line conditionals without semi-colons.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=dGhlbg&s=5sdMmkfI","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=T3B0aW9uYWwgY29tcG9uZW50IG9mIGNvbmRpdGlvbmFsIHN0YXRlbWVudHMgKGlmLCB1bmxlc3MsIHdoZW4pLiBOZXZlciBtYW5kYXRvcnksIGJ1dCBhbGxvd3MgZm9yIG9uZS1saW5lIGNvbmRpdGlvbmFscyB3aXRob3V0IHNlbWktY29sb25zLg&s=YaXwQlLk","has_def_custom_audio":false},{"id":668211775,"photo":"","word":"true","definition":"The sole instance of the special class TrueClass. true encapsulates Boolean truth; however, <emph>all<\/emph> objects in Ruby are true in the Boolean sense (informally, they cause an if test to succeed), with the exceptions of false and nil.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=dHJ1ZQ&s=CtS2.UXO","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=VGhlIHNvbGUgaW5zdGFuY2Ugb2YgdGhlIHNwZWNpYWwgY2xhc3MgVHJ1ZUNsYXNzLiB0cnVlIGVuY2Fwc3VsYXRlcyBCb29sZWFuIHRydXRoOyBob3dldmVyLCA8ZW1waD5hbGw8L2VtcGg-IG9iamVjdHMgaW4gUnVieSBhcmUgdHJ1ZSBpbiB0aGUgQm9vbGVhbiBzZW5zZSAoaW5mb3JtYWxseSwgdGhleSBjYXVzZSBhbiBpZiB0ZXN0IHRvIHN1Y2NlZWQpLCB3aXRoIHRoZSBleGNlcHRpb25zIG9mIGZhbHNlIGFuZCBuaWwu&s=xf8sBtQC","has_def_custom_audio":false},{"id":668211776,"photo":"","word":"undef","definition":"Undefines a given method, for the class or module in which it's called. If the method is defined higher up in the lookup path (such as by a superclass), it can still be called by instances classes higher up.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=dW5kZWY&s=ooC.pY1F","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=VW5kZWZpbmVzIGEgZ2l2ZW4gbWV0aG9kLCBmb3IgdGhlIGNsYXNzIG9yIG1vZHVsZSBpbiB3aGljaCBpdCdzIGNhbGxlZC4gSWYgdGhlIG1ldGhvZCBpcyBkZWZpbmVkIGhpZ2hlciB1cCBpbiB0aGUgbG9va3VwIHBhdGggKHN1Y2ggYXMgYnkgYSBzdXBlcmNsYXNzKSwgaXQgY2FuIHN0aWxsIGJlIGNhbGxlZCBieSBpbnN0YW5jZXMgY2xhc3NlcyBoaWdoZXIgdXAu&s=BaCKAPJN","has_def_custom_audio":false},{"id":668211777,"photo":"","word":"unless","definition":"The negative equivalent of if. i.e. unless y.score > 10 puts \"Sorry; you needed 10 points to win.\" end.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=dW5sZXNz&s=eIufBqZo","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=VGhlIG5lZ2F0aXZlIGVxdWl2YWxlbnQgb2YgaWYuIGkuZS4gdW5sZXNzIHkuc2NvcmUgPiAxMCBwdXRzICJTb3JyeTsgeW91IG5lZWRlZCAxMCBwb2ludHMgdG8gd2luLiIgZW5kLg&s=yFaD.CoI","has_def_custom_audio":false},{"id":668211778,"photo":"","word":"until","definition":"The inverse of while: executes code until a given condition is true, i.e., while it is not true. The semantics are the same as those of while.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=dW50aWw&s=rXqxwCOc","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=VGhlIGludmVyc2Ugb2Ygd2hpbGU6IGV4ZWN1dGVzIGNvZGUgdW50aWwgYSBnaXZlbiBjb25kaXRpb24gaXMgdHJ1ZSwgaS5lLiwgd2hpbGUgaXQgaXMgbm90IHRydWUuIFRoZSBzZW1hbnRpY3MgYXJlIHRoZSBzYW1lIGFzIHRob3NlIG9mIHdoaWxlLg&s=wXW7VUCu","has_def_custom_audio":false},{"id":668211779,"photo":"","word":"when","definition":"Same as case.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=d2hlbg&s=FGhO.kIx","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=U2FtZSBhcyBjYXNlLg&s=9PkJ-ROQ","has_def_custom_audio":false},{"id":668211780,"photo":"","word":"while","definition":"Takes a condition argument, and executes the code that follows (up to a matching end delimiter) while the condition is true.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=d2hpbGU&s=C3clTXU-","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=VGFrZXMgYSBjb25kaXRpb24gYXJndW1lbnQsIGFuZCBleGVjdXRlcyB0aGUgY29kZSB0aGF0IGZvbGxvd3MgKHVwIHRvIGEgbWF0Y2hpbmcgZW5kIGRlbGltaXRlcikgd2hpbGUgdGhlIGNvbmRpdGlvbiBpcyB0cnVlLg&s=GNKstFDT","has_def_custom_audio":false},{"id":668211781,"photo":"","word":"yield","definition":"Called from inside a method body, yields control to the code block (if any) supplied as part of the method call. If no code block has been supplied, calling yield raises an exception.","quiz_id":19946728,"term_lang":"en","def_lang":"en","word_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=eWllbGQ&s=daarQ3ql","has_word_custom_audio":false,"def_audio":"http:\/\/quizlet.com\/tts\/en.mp3?v=14&b=Q2FsbGVkIGZyb20gaW5zaWRlIGEgbWV0aG9kIGJvZHksIHlpZWxkcyBjb250cm9sIHRvIHRoZSBjb2RlIGJsb2NrIChpZiBhbnkpIHN1cHBsaWVkIGFzIHBhcnQgb2YgdGhlIG1ldGhvZCBjYWxsLiBJZiBubyBjb2RlIGJsb2NrIGhhcyBiZWVuIHN1cHBsaWVkLCBjYWxsaW5nIHlpZWxkIHJhaXNlcyBhbiBleGNlcHRpb24u&s=QwloFuZK","has_def_custom_audio":false}]);
+	QLoad('SetPageObject');
+});
+</script>
+
+
+	<footer class="global footer no-ad">
+	<div class="container">
+
+		<div class="links">
+			<div class="fill">
+
+				<hr>
+
+				<ul class="inside using-quizlet">
+					<li><span class="label">Using Quizlet</span></li>
+
+											<li><a href="https://quizlet.com/sign-up" data-sourcename="global-footer">Sign Up</a></li>
+					
+					<li><a href="/help">Help</a></li>
+
+					<li><a href="/mobile">Mobile</a></li>
+
+					<li><a href="/students">Students</a></li>
+					<li><a href="/teachers">Teachers</a></li>
+
+									</ul>
+
+				<ul class="inside about">
+					<li><span class="label">About Quizlet</span></li>
+
+					<li><a href="/about">Company</a></li>
+					<li><a href="/jobs">Jobs</a></li>
+					<li><a href="/privacy">Privacy</a></li>
+					<li><a href="/tos">Terms</a></li>
+					<li><a href="/feedback">Contact</a></li>
+				</ul>
+
+				<p class="copyright">Study Everywhere! &copy; 2014 Quizlet LLC. <span class="word-wrap">Follow <a href="https://twitter.com/quizlet">@quizlet</a> on Twitter.</span></p>
+			</div>
+		</div>
+
+					<div class="ad-wrap fill"><div id='dfp-NewFooterLO' style='width:728px;height:90px' class='ad noprint '><script type='text/javascript'>if(DFPADS)googletag.cmd.push(function(){googletag.display("dfp-NewFooterLO");});</script><span class="patch one"></span><span class="patch two"></span><span class="patch three"></span><span class="patch four"></span></div></div>
+		
+	</div>
+</footer>
+<script>if(typeof performance !== "undefined" && 'mark' in performance){performance.mark("mark_footer_start"); }</script>
+			
+	<script>QPAGE="Sets\"show".replace(/"/g, '/');QWait('dom',function(){_qoptions={qacct:"p-5brKQLtleyIQU"};_comscore=[{c1:"2",c2:"8641686"}];_gaq.push(['_trackPageview',QPAGE]);$LAB.script(['http://stats.g.doubleclick.net/dc.js','http://edge.quantserve.com/quant.js','http://b.scorecardresearch.com/beacon.js',]);});</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=8641686&amp;cv=2.0&amp;cj=1" alt="" /></noscript><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-6.newrelic.com","licenseKey":"a92c37725f","applicationID":"124534","transactionName":"YVcEY0EAXUJYVkUMDlgdJUJAFVxcFmZUERIZQQ5YRA==","queueTime":0,"applicationTime":121,"ttGuid":"","agentToken":"","userAttributes":"TRAHVFAORl9NakUcEVMQXBV\/DlRWXFF+EBUUHkRCWgURCxtAAFFSBwNRAAJUBgELBQlUUQ8LURUfQ0BUWlpfARJpQQ9ZUARsV1BHQhE+RVcDWRFbAx0bVl0KFFJUClZBBGxVWEFQBgRYRgNFEVsRYnx0E0lDRVcSaF8ASl5MQRNfQ1pbFUMRTRFFXEdcOg5EVgNFEVsRXktcVgwPV15EGxEVVkNUalIKFFhGRA0AWU4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-412.min.js"}</script>
+
+
+</div>
+
+<div class="mobile-nav">
+	<a class="return-to-site" id="deactivate-nav" href="#"></a>
+
+	<div class="scrollable-nav">
+		<a class="create-set" href="/create-set">
+			<span class="glyph icon create-set-icon ">&#xe002;</span>			<span class="label">Create Set</span>
+		</a>
+					<div class="guest side-nav">
+
+				<section class="linear login content">
+	<div class="connect">
+		<div class="google">
+			<a class="google button" href="https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=https%3A%2F%2Fquizlet.com%2Fgoogle-login&client_id=520305074949.apps.googleusercontent.com&scope=profile+email&access_type=online&approval_prompt=auto&state=%7B%22state%22%3A%22Z95pv7%22%2C%22reauth%22%3Afalse%2C%22from%22%3A%22%5C%2F19946728%5C%2Flearn-ruby-the-hard-way-keywords-flash-cards%5C%2F%22%7D">
+				<span class="glyph icon google-icon ">&#xe056;</span>				<span class="label">Log In with Google</span>
+			</a>
+		</div>
+		<div class="fb">
+			<a class="fb-login fb_button fb_button_large " href="https://www.facebook.com/dialog/oauth?client_id=2232594215&redirect_uri=https%3A%2F%2Fquizlet.com%2Ffb-login%3Ffrom%3Dhttp%253A%252F%252Fquizlet.com%252F19946728%252Flearn-ruby-the-hard-way-keywords-flash-cards%252F&state=Z95pv7&scope=email%2Cuser_birthday%2Cuser_education_history"><span class="icon"></span><span class="label">Log In with Facebook</span></a>		</div>
+	</div>
+
+	<span class="Divider"><span class="Divider-label--lowercase Divider-label">or</span></span>
+
+	<form class="login" action="https://quizlet.com/login" method="post">
+
+	<label class="username field">
+		<input class="text" type="text" value="" name="username" id="username1" spellcheck="false" autocorrect="off" placeholder="Username" />
+	</label>
+
+	<label class="password field">
+		<input class="password text" type="password" name="password" id="password1" placeholder="Password"/>
+	</label>
+
+	<div class="extras">
+		<label class="remember">
+			<input type="checkbox" name="rememberMe"  value="1" />
+			<strong>Keep me logged in</strong>
+		</label>
+		<a href="https://quizlet.com/forgotten" title="Retrieve your forgotten username or password" class="forgot wide">Forgot password?</a>	</div>
+
+	<div class="done center">
+		<button type="submit" class="submit button">Log In</button>
+	</div>
+
+	<div class="extras">
+		<a href="https://quizlet.com/forgotten" title="Retrieve your forgotten username or password" class="forgot slim">Forgot password?</a>	</div>
+
+	<div class="hidden">
+		<input type="hidden" value="/19946728/learn-ruby-the-hard-way-keywords-flash-cards/" name="redir" />
+
+			</div>
+
+</form>
+
+<script>
+(function(){var a=new Date,a=a.getHours()+Math.round(a.getMinutes()/60*10)/10;if(5>a||17.5<a)for(var a=document.getElementsByName("rememberMe"),b=0;b<a.length;b++)a[b].checked=!0})();
+</script></section>
+
+				<div class="new-signup">
+					<h3>Need an account?</h3>
+					<a href="https://quizlet.com/sign-up?redir=http%3A%2F%2Fquizlet.com%2F19946728%2Flearn-ruby-the-hard-way-keywords-flash-cards%2F" class="signup button" data-sourcename="mobile-nav-sidebar">Sign up for free</a>				</div>
+
+			</div>
+			</div>
+</div>
+
+
+<script type="text/javascript">QWait("dom",function(){var a=document.body,b=document.getElementById("activate-nav"),c=document.getElementById("activate-search"),d=document.getElementById("deactivate-search"),e=document.getElementById("deactivate-nav");null!==b&&(b.onclick=function(){a.className=a.className.replace(" navActivated","")+" navActivated";return!1});null!==e&&(e.onclick=function(){a.className=a.className.replace(" navActivated","");return!1});null!==c&&(c.onclick=function(){a.className=a.className.replace(" searchActivated",
+"")+" searchActivated";document.getElementById("header-search").focus();return!1});null!==d&&(d.onclick=function(){a.className=a.className.replace(" searchActivated","");return!1})});
+</script>
+
+</body></html>
