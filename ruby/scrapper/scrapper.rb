@@ -17,6 +17,11 @@ end
   defs << definition.text
 end
 
+(0..words.length - 1).each do |index|
+  puts words[index]
+  puts defs[index]
+  puts ""
+end
 
 CSV.open("quizlet.csv", "wb") do |csv|
 	csv << [words, defs]
