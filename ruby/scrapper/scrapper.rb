@@ -24,32 +24,11 @@ end
 end
 
 CSV.open("quizlet.csv", "wb") do |csv|
-	csv << ["words", "definition"]
+	csv << ["WORD", "DEFINITION"]
+  csv << ["", ""]
+
 	(0..words.length - 1).each do |index|
 	  csv << [ words[index], defs[index] ]
   end
 end
 
-
-
-# CSV.open("myfile.csv", "w") do |csv|
-#   csv << ["row", "of", "CSV", "data"]
-#   csv << ["another", "row"]
-#   # ...
-# end
-
-
-
-
-# qWord lang-en
-# Def lang-en
-
-
-
-# the_scraper = HeadlineScraper.new('http://www.reddit.com/r/ruby')
-
-# CSV.open("reddit_headline.csv", "wb") do |csv|  
-#     the_scraper.get_headlines.each do |line|
-#         csv << [line.text, line['href']]
-#     end
-# end  
