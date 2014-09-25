@@ -24,8 +24,12 @@ end
 end
 
 CSV.open("quizlet.csv", "wb") do |csv|
-	csv << [words, defs]
+	csv << ["words", "definition"]
+	(0..words.length - 1).each do |index|
+	  csv << [ words[index], defs[index] ]
+  end
 end
+
 
 
 # CSV.open("myfile.csv", "w") do |csv|
